@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7f6759bc-c79f-4c2b-be9a-d0ec8f7b24f3">
+	<property name="ireport.zoom" value="1.4641000000000075"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="5"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="3e4f9203-cce1-4e51-aef7-5c31998f13f0"/>
+	<parameter name="grandtotal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select
+*
+from
+billdetails]]>
+	</queryString>
+	<field name="billno" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cnumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="otype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ometal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="currentprice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gst" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mcharges" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grandtotal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jid" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="181" y="26" width="185" height="34" uuid="2801ee49-be30-4096-92a9-e8284c8c5a71"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24"/>
+				</textElement>
+				<text><![CDATA[Customer Invoice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="60" width="252" height="21" uuid="7244afe5-fc85-4937-b347-4b33060d30af"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jewellery Shop, Sadar Bazar, Raipur (C.G)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="92" width="555" height="1" uuid="1203e4e7-5f79-4706-9c2b-5cb58512febd"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="143" splitType="Stretch">
+			<textField>
+				<reportElement x="61" y="21" width="100" height="21" uuid="55026a1e-69a7-4fb4-b504-3ebb5d8eb4e2"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{billno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="21" width="50" height="21" uuid="c8bbfc1b-d1f6-4954-90a3-2be0bf57e8db"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bill No.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="456" y="2" width="40" height="20" uuid="54220717-f289-4e23-a73e-9aa761fd9913"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="366" y="2" width="50" height="21" uuid="e9f93e66-99f1-4567-88fa-de162b46ee56"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="119" width="554" height="1" uuid="bd9893a3-5559-4bfd-8e40-6eab20c84e76"/>
+			</line>
+			<staticText>
+				<reportElement x="11" y="54" width="100" height="20" uuid="c0788362-1c48-4943-8966-fa8a897d522c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="54" width="100" height="20" uuid="218421ea-a88c-493e-9b6b-76afe4b427f4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="82" width="100" height="20" uuid="4674e1b8-8b97-4d25-9336-be9b7aec357c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile Number :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="82" width="100" height="20" uuid="a9c5be52-69eb-4fe8-91cf-d844de61dc1a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cnumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="366" y="54" width="60" height="20" uuid="7731cb9e-5ecc-4fbf-8239-8d3a5eaf4786"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GST % :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="473" y="54" width="14" height="20" uuid="f96907f4-ada4-483c-84b3-bb7e8d795eb2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gst}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="366" y="74" width="107" height="20" uuid="4b538764-6ce4-4663-9c67-b5c01f69b843"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Making Charges % :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="473" y="74" width="14" height="20" uuid="889a6f53-b265-4e88-997a-e1a04864ec70"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mcharges}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="487" y="54" width="9" height="20" uuid="d9e01a4f-7e29-46ff-ac90-55f24503660e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="74" width="9" height="20" uuid="875fddc8-bb8f-4ea1-a6ac-1c0a08732561"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="126" width="100" height="17" uuid="25ecf75b-bc01-42db-8626-5426180d06f9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Jewellery Details]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="126" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="11" width="100" height="20" uuid="ac84929a-9c35-4d59-ab2c-f37093d0af9c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ornament Type]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="11" width="100" height="20" uuid="898b78f1-0990-4983-b84b-8e0ce45ef785"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="31" width="100" height="20" uuid="8d37860a-ae64-4f42-92bd-ae94fd13d15d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ornament Made Of]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="31" width="100" height="20" uuid="e2e3ddf5-288a-4078-910c-800d16f5d4c1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ometal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="52" width="73" height="20" uuid="f38a834b-6db0-494b-b715-5e0425507d36"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price Per Kg Of ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="52" width="100" height="20" uuid="d2f6173f-f836-4210-97d1-be42ec552565"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currentprice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="72" width="100" height="20" uuid="0c86c55c-1450-474c-804c-03390c3c6b3f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Weight]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="72" width="100" height="20" uuid="87e6a8a1-ad57-490c-82c4-5778552798ea"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="92" width="100" height="20" uuid="5c9b8613-e0e8-4963-9b16-99b65583ca57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ornament Price:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="92" width="100" height="20" uuid="f592e933-e0d3-4335-b25b-d7e5b019a769"/>
+				<textElement>
+					<font isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="52" width="50" height="20" uuid="1877681c-0b02-4b32-87f7-b6f175db2a3b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ometal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="124" width="553" height="1" uuid="daaae7f3-9ae2-4db1-982e-25f350045202"/>
+			</line>
+			<line>
+				<reportElement x="-2" y="0" width="555" height="1" uuid="a4d2303a-6710-49f6-824b-a1c3a7ecb85f"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-143" width="1" height="267" uuid="f8870d93-6907-4552-b122-cc969617d710"/>
+			</line>
+			<line>
+				<reportElement x="553" y="-143" width="1" height="267" uuid="732f1083-3998-45a1-8bd0-9df35e010805"/>
+			</line>
+			<staticText>
+				<reportElement x="404" y="92" width="31" height="20" uuid="b5c8f215-ba38-447e-a226-e268c2e4e58c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="453" y="92" width="100" height="20" uuid="8d427315-4a52-4fb2-9895-e78cc82f324e"/>
+				<textElement>
+					<font isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grandtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="453" y="11" width="100" height="20" uuid="bcbe2ca5-b4f3-4f05-aa15-ac0a8aa7383f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="363" y="11" width="69" height="21" uuid="c5359bda-2773-4caa-8018-2b291e56604d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jewellery Id:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="302" y="20" width="254" height="17" uuid="da8a4da4-6fd1-4abf-a140-895585d2e4e9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thanks for purchasing from our shop. Visit Again.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="454" y="0" width="100" height="20" uuid="94f5109b-cd55-473d-af1f-f5a8c774a355"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grandtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="364" y="0" width="89" height="20" uuid="dc403428-83c7-4a68-bbd4-e4cc5a7f3b79"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total :]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

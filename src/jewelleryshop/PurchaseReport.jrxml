@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7db07d84-41d5-4c75-afb1-5e4ef17e142f">
+	<property name="ireport.zoom" value="1.6105100000000019"/>
+	<property name="ireport.x" value="66"/>
+	<property name="ireport.y" value="38"/>
+	<parameter name="grandtotal" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select
+*
+from
+purchase]]>
+	</queryString>
+	<field name="jid" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="otype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="metal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="currentprice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="priceper" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grandtotal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dnum" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="161" y="43" width="252" height="21" uuid="07cb8c42-483f-4d20-a154-c69a6bb31030"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jewellery Shop, Sadar Bazar, Raipur (C.G)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="9" width="185" height="34" uuid="0614573a-7049-400e-bc35-899c2a31c585"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="24"/>
+				</textElement>
+				<text><![CDATA[Dealer Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="64" width="555" height="1" uuid="13462162-4732-4099-bc3b-59274fb2bd83"/>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="159" splitType="Stretch">
+			<textField>
+				<reportElement x="148" y="12" width="50" height="20" uuid="237b9e4b-9102-4378-8218-0972472ea6a9"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="32" width="50" height="20" uuid="a3f25635-6b0f-4272-9acd-d7ed9f3cba48"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="52" width="50" height="20" uuid="b14e38d1-d711-48c3-89be-d0978d2a36d0"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{metal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="72" width="50" height="20" uuid="4c440c1b-e9bb-4833-ae85-3ba9c1bd488d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="92" width="74" height="20" uuid="704ffa6e-e876-4738-b9c1-c8c6138ae438"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currentprice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="22" width="67" height="20" uuid="eca45f7b-2a13-43ca-83c8-e47ff4424ed7"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{priceper}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="42" width="66" height="20" uuid="36267f41-9922-49f3-a66c-431bb1939980"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="62" width="66" height="20" uuid="224016dc-9351-4cc4-9a7a-8e7c00133f23"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grandtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="82" width="29" height="20" uuid="7f19a395-b9ab-4377-a8e5-cf0e88bd2b64"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="133" width="66" height="13" uuid="f883d9d5-692c-469b-bda6-4683dcd985c8"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dnum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="449" y="113" width="104" height="20" uuid="52951211-dc03-4ba2-ac36-e92c384e3478"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dname}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="11" width="554" height="1" uuid="4401912e-9e43-4edf-93b9-8b0116d8c2d0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="146" width="555" height="1" uuid="1bcbe3f3-973f-4ecd-a9e8-d56130ab8189"/>
+			</line>
+			<line>
+				<reportElement x="-2" y="12" width="1" height="134" uuid="daab3103-e426-495f-a1a5-afb8138c6e5b"/>
+			</line>
+			<line>
+				<reportElement x="553" y="11" width="1" height="135" uuid="0d44037c-e321-4928-afc2-4f0a227b2348"/>
+			</line>
+			<line>
+				<reportElement x="271" y="12" width="1" height="134" uuid="892435df-4571-47a6-b2d5-7067c387ec80"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="12" width="67" height="20" uuid="8661df6c-47c4-41da-bc54-74475a7f6587"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jewellery ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="77" height="20" uuid="6e204a7c-7dc9-4832-b83f-b57fa4499296"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ornament Type :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="77" height="20" uuid="600c4b57-d205-42c3-97cc-b7c459a181e1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Made Of :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="72" width="50" height="20" uuid="912f35ef-d4bc-4e20-a0f7-e6fe40cb7000"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Weight :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="87" height="20" uuid="a260293b-0bd4-473e-8985-7cc635aae57b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Current Price of]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="87" y="92" width="50" height="20" uuid="b8b84fb7-c30a-487c-8fec-b6604ee8aa38"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{metal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="137" y="92" width="11" height="20" uuid="86660eeb-cc54-4ad0-b3c8-f71f4c03825f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="22" width="89" height="20" uuid="31f8d1f2-4282-42fb-b1d3-d4b9c2b600ea"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price Per Unit :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="42" width="119" height="20" uuid="a954fbf8-605e-4979-9d3e-093bef77fc18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity Imported :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="62" width="101" height="20" uuid="5568e05b-67ea-4552-abfb-a79eff3bb423"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="82" width="119" height="20" uuid="43c636e0-e930-4b90-b124-c77e85369aee"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Of Purchase :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="93" width="105" height="20" uuid="56737c47-e65c-4a48-aab5-dcd29c17f834"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Imported From :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="468" y="0" width="74" height="20" uuid="f5cc4659-e820-4808-992d-2b6b6830999c"/>
+				<textFieldExpression><![CDATA[$P{grandtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="325" y="0" width="142" height="20" uuid="5ad8afcc-250f-45cb-9e07-d733bb7b591f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Purchase Amount :]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
